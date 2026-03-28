@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Website</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
+        <div class="container d-flex flex-column align-items-center">
+
+            <!-- Mobile Row (Logo and Toggler) -->
+            <div class="d-flex w-100 justify-content-between align-items-center d-lg-none mb-3">
+                <a class="navbar-brand fw-bold m-0" href="#">
+                    <img src="./images/logo.png" alt="Logo" style="height: 35px;">
+                </a>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Mobile Search Icon (Duplicate of desktop one but simplified for mobile row) -->
+                    <a href="javascript:void(0)" class="text-dark fs-5 mobile-search-trigger"><i
+                            class="bi bi-search"></i></a>
+                    <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Desktop Logo Section (Hidden on mobile) -->
+            <a class="navbar-brand fw-bold mb-3 d-none d-lg-block" href="#">
+                <img src="./images/logo.png" alt="Logo" style="height: 40px;">
+            </a>
+
+            <!-- Navigation and Icons Section -->
+            <div class="w-100 d-flex align-items-center justify-content-between">
+
+                <!-- Search Icon (Desktop) -->
+                <div class="nav-icons-left d-none d-lg-flex align-items-center">
+                    <a href="javascript:void(0)" id="searchIcon" class="text-dark fs-5"><i class="bi bi-search"></i></a>
+                    <div id="searchBar" class="search-bar-container ms-2">
+                        <input type="text" id="searchInput" class="form-control form-control-sm search-input"
+                            placeholder="Search...">
+                    </div>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+                    <ul class="navbar-nav gap-4 text-uppercase fw-semibold" style="font-size: 14px;">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#">Spaces</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Products & Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Showrooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side Icons -->
+                <div class="nav-icons-right d-flex gap-3">
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="text-dark fs-5 d-none d-md-block"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="hero-box">
+                        <h2>New Generation Ceramic Tile </h2>
+                        <p>
+                            Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus
+                            maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex
+                            ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                        </p>
+                        <a href="#" class="btn btn-dark">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="py-5 text-center product-section">
+        <div class="container">
+            <h3 class="mb-2">Products</h3>
+            <hr>
+            <p class="text-muted mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text.</p>
+
+            <div class="row g-4">
+
+                <!-- Column 1: Bathroom Tiles -->
+                <div class="col-md-5">
+                    <div class="product-card h-100">
+                        <div class="img-container h-100">
+                            <img src="images/product1.png" class="img-fluid h-100 object-fit-cover">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="mb-1 fw-bold">Bathroom Tiles</h5>
+                            <p class="small mb-0 opacity-75">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Marble -->
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <div class="img-container h-100">
+                            <img src="images/product2.png" class="img-fluid h-100 object-fit-cover">
+                        </div>
+                        <div class="overlay">
+                            <h5 class="mb-1 fw-bold">Marble</h5>
+                            <p class="small mb-0 opacity-75">Ante mus blandit sapien sociosqu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Split row -->
+                <div class="col-md-4">
+                    <div class="d-flex flex-column h-100 gap-4">
+                        <!-- Outdoor Flooring -->
+                        <div class="product-card flex-grow-1">
+                            <div class="img-container h-100">
+                                <img src="images/product3.png" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="overlay">
+                                <h5 class="mb-1 fw-bold">Outdoor Flooring</h5>
+                                <p class="small mb-0 opacity-75">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                        <!-- Kitchen Interior -->
+                        <div class="product-card flex-grow-1">
+                            <div class="img-container h-100">
+                                <img src="images/product4.png" class="img-fluid h-100 object-fit-cover">
+                            </div>
+                            <div class="overlay">
+                                <h5 class="mb-1 fw-bold">Kitchen Interior</h5>
+                                <p class="small mb-0 opacity-75">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="py-5 text-center project-section">
+        <div class="container">
+            <h3 class="mb-2">Projects</h3>
+            <hr>
+            <p class="text-muted mb-5 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text.</p>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="images/project1.png" class="img-fluid">
+                        </div>
+                        <h6 class="mt-4">Kingdom Tower</h6>
+                        <p>Marble Flooring</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="images/project2.png" class="img-fluid">
+                        </div>
+                        <h6 class="mt-4">Dubai mall</h6>
+                        <p>Wood Flooring</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="images/project3.png" class="img-fluid">
+                        </div>
+                        <h6 class="mt-4">King Road Offices</h6>
+                        <p>Outdoor Flooring</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="project-card">
+                        <div class="img-container">
+                            <img src="images/project4.png" class="img-fluid">
+                        </div>
+                        <h6 class="mt-4">Beach Tower Alupang</h6>
+                        <p>Wood Flooring</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-dark mt-4">View All</button>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="./images/logo-white.png" alt="" class="logo">
+                    <div class="d-flex gap-3 sm-links">
+                        <img src="./images/fb.svg" alt="" class="img-fluid">
+                        <img src="./images/x.svg" alt="" class="img-fluid">
+                        <img src="./images/insta.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h6>Products</h6>
+                    <ul class="list-unstyled">
+                        <li>Sand Stone</li>
+                        <li>Stone</li>
+                        <li>Cement</li>
+                        <li>Soft Stone</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li>Measurement Service</li>
+                        <li>Product Advice</li>
+                        <li>Interior Design</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6>Contact</h6>
+                    <p>3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br>
+                        An Nuzhah, Riyadh 12474, <br>
+                        Saudi Arabia</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Search Toggle JS -->
+    <script>
+        document.getElementById('searchIcon').addEventListener('click', function (e) {
+            e.preventDefault();
+            const searchBar = document.getElementById('searchBar');
+            const searchInput = document.getElementById('searchInput');
+
+            searchBar.classList.toggle('active');
+            if (searchBar.classList.contains('active')) {
+                searchInput.focus();
+            }
+        });
+
+        // Close search bar when clicking outside
+        document.addEventListener('click', function (event) {
+            const searchIcon = document.getElementById('searchIcon');
+            const searchBar = document.getElementById('searchBar');
+            if (!searchIcon.contains(event.target) && !searchBar.contains(event.target)) {
+                searchBar.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

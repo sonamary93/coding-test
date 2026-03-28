@@ -153,6 +153,7 @@ body {
 .overlay p {
     font-size: 0.85rem;
     line-height: 1.4;
+    margin-top: 10px;
 }
 
 .object-fit-cover {
@@ -177,6 +178,16 @@ body {
     margin-top: 25px;
 }
 
+.product-section .overlay p {
+    margin-top: 5px;
+}
+
+.project-card p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #11101080;
+}
+
 .product-section hr,
 .project-section hr {
     width: 10%;
@@ -185,20 +196,22 @@ body {
 }
 
 .project-section h6 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .project-section p {
-    font-size: 16px;
-    color: #11101080;
+    /* font-size: 12px;
+    color: #11101080; */
 }
 
 .project-section button {
     border-radius: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
+    padding: 10px 30px;
 }
 
 /* ================= FOOTER ================= */
@@ -215,4 +228,128 @@ footer ul li:hover {
 
 footer h4 {
     font-weight: 600;
+}
+
+.sm-links {
+    margin-top: 25px;
+}
+
+
+
+/* ================= RESPONSIVENESS ================= */
+
+@media (max-width: 1024px) {
+    .navbar .container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0 !important;
+    }
+
+    .nav-icons-left,
+    .nav-icons-right {
+        margin: 0 !important;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        gap: 15px !important;
+        text-align: center;
+    }
+
+    .hero-section {
+        background-size: cover;
+        /* background-position: center; */
+        min-height: auto;
+        padding: 40px 0;
+        margin-top: 75px;
+    }
+
+    .hero-box {
+        padding: 40px 30px;
+    }
+
+    .hero-box h2 {
+        font-size: 30px;
+    }
+
+    .overlay {
+        padding: 15px 10px;
+    }
+
+    .overlay h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        background-position: center;
+        margin-top: 0;
+    }
+
+    .container {
+        padding: 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px !important;
+    }
+
+    .product-section h3,
+    .project-section h3 {
+        font-size: 28px;
+    }
+
+    .hero-box h2 {
+        font-size: 24px;
+    }
+
+    .hero-box p {
+        font-size: 14px;
+    }
+
+    .product-card {
+        margin-bottom: 30px;
+    }
+
+    .product-card.h-100 {
+        height: 350px !important;
+    }
+
+    .overlay {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+    }
+
+    footer .col-md-2,
+    footer .col-md-4 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .sm-links {
+        justify-content: center;
+    }
+
+    footer .nav-icons-left {
+        justify-content: center;
+    }
 }

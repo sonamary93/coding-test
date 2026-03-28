@@ -19,19 +19,35 @@
 <body>
 
     <!-- ================= NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
         <div class="container d-flex flex-column align-items-center">
 
-            <!-- Logo Section -->
-            <a class="navbar-brand fw-bold mb-3" href="#">
+            <!-- Mobile Row (Logo and Toggler) -->
+            <div class="d-flex w-100 justify-content-between align-items-center d-lg-none mb-3">
+                <a class="navbar-brand fw-bold m-0" href="#">
+                    <img src="./images/logo.png" alt="Logo" style="height: 35px;">
+                </a>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Mobile Search Icon (Duplicate of desktop one but simplified for mobile row) -->
+                    <a href="javascript:void(0)" class="text-dark fs-5 mobile-search-trigger"><i
+                            class="bi bi-search"></i></a>
+                    <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Desktop Logo Section (Hidden on mobile) -->
+            <a class="navbar-brand fw-bold mb-3 d-none d-lg-block" href="#">
                 <img src="./images/logo.png" alt="Logo" style="height: 40px;">
             </a>
 
             <!-- Navigation and Icons Section -->
-            <div class="w-100 d-flex align-items-center justify-content-between ">
+            <div class="w-100 d-flex align-items-center justify-content-between">
 
-                <!-- Search Icon -->
-                <div class="nav-icons-left d-flex align-items-center">
+                <!-- Search Icon (Desktop) -->
+                <div class="nav-icons-left d-none d-lg-flex align-items-center">
                     <a href="javascript:void(0)" id="searchIcon" class="text-dark fs-5"><i class="bi bi-search"></i></a>
                     <div id="searchBar" class="search-bar-container ms-2">
                         <input type="text" id="searchInput" class="form-control form-control-sm search-input"
@@ -55,15 +71,9 @@
                 <!-- Right Side Icons -->
                 <div class="nav-icons-right d-flex gap-3">
                     <a href="#" class="text-dark fs-5"><i class="bi bi-cart"></i></a>
-                    <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark fs-5 d-none d-md-block"><i class="bi bi-heart"></i></a>
                     <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
                 </div>
-
-                <!-- Mobile Toggler (moved to be visible on mobile) -->
-                <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
             </div>
         </div>
@@ -184,7 +194,7 @@
                         <div class="img-container">
                             <img src="images/project2.png" class="img-fluid">
                         </div>
-                        <h6 class="mt-4">Dubai Mall</h6>
+                        <h6 class="mt-4">Dubai mall</h6>
                         <p>Wood Flooring</p>
                     </div>
                 </div>
@@ -204,7 +214,7 @@
                         <div class="img-container">
                             <img src="images/project4.png" class="img-fluid">
                         </div>
-                        <h6 class="mt-4">Beach Tower</h6>
+                        <h6 class="mt-4">Beach Tower Alupang</h6>
                         <p>Wood Flooring</p>
                     </div>
                 </div>
@@ -222,8 +232,8 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <img src="./images/logo-white.png" alt="">
-                    <div class="d-flex gap-3 mt-5">
+                    <img src="./images/logo-white.png" alt="" class="logo">
+                    <div class="d-flex gap-3 sm-links">
                         <img src="./images/fb.svg" alt="" class="img-fluid">
                         <img src="./images/x.svg" alt="" class="img-fluid">
                         <img src="./images/insta.svg" alt="" class="img-fluid">
